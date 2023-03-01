@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Big Billion</string>
+
+    <string-array name="selectgame">
+        <item>Select Game</item>
+        <item>GL</item>
+        <item>DS</item>
+        <item>FD</item>
+        <item>GB</item>
+        <item>GD</item>
+    </string-array>
+
+
+
+    <string-array name="selectgamex">
+        <item>Select Game</item>
+        <item>Today Games</item>
+        <item>GL - 10:35 PM</item>
+        <item>Next Day Games</item>
+        <item>DS - 02:10 AM</item>
+        <item>FD - 05:35 PM</item>
+        <item>GB - 07:35 PM</item>
+    </string-array>
+
+    <string-array name="Month">
+        <item>Month</item>
+        <item>Janauary</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+    </string-array>
+
+    <string-array name="Year">
+        <item>"2020"</item>
+        <item>"2021"</item>
+        <item>"2022"</item>
+        <item>"2023"</item>
+        <item>"2024"</item>
+        <item>"2025"</item>
+    </string-array>
+    <string-array name="Months">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+        <item>"11"</item>
+        <item>"12"</item>
+
+    </string-array>
+
+    <string-array name="selectday">
+        <item>Select Day</item>
+        <item>Yesterday</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

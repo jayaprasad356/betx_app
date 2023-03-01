@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/apppink"
+    tools:context=".SharePointsActivity">
+
+
+    <EditText
+        android:id="@+id/etMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_margin="20dp"
+        android:background="@drawable/whitebackgroundcruve"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/etPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Point to Share"
+        android:inputType="number"
+        android:layout_margin="20dp"
+        android:background="@drawable/whitebackgroundcruve"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btndesign"
+        android:text="Share Points"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:backgroundTint="@null" />
+
+
+
+</LinearLayout>

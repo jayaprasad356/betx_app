@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/apppink"
+    tools:context=".Add_Account_Details_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bluecruve"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Details"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg5"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Number"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/etAccountNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Account Number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluelinebackground"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IFSC"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/etIFSC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="IFSC Code"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluelinebackground"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Holder Name"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/etHolderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Account Holder Name"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluelinebackground"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg6"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paytm Number"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/etPaytm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Paytm Number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluelinebackground"
+                android:padding="10dp"/>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg5"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Pay Number"
+                android:textColor="@color/white"/>
+            <EditText
+                android:id="@+id/etPhonepe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Pay Number"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bluelinebackground"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@drawable/btndesign"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:backgroundTint="@null" />
+</LinearLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "258690116057",
+    "project_id": "big-billion-7e477",
+    "storage_bucket": "big-billion-7e477.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258690116057:android:0faf7b20548d7b26bf91c8",
+        "android_client_info": {
+          "package_name": "com.ayu.bigbillion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258690116057-g6o7m9m9b6at881q8qk5au1k6svvjhq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ayu.bigbillion",
+            "certificate_hash": "8881fdd25c090af0389a1c16daa2b5a47b80e897"
+          }
+        },
+        {
+          "client_id": "258690116057-kqekbp9dfr2hvvepqv42pjapi0htemtu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV_yHlfRLlr0O15MqdYLgWxJYRYmKgGLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258690116057-kqekbp9dfr2hvvepqv42pjapi0htemtu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
