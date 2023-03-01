@@ -47,22 +47,24 @@ public class LoginActivity extends AppCompatActivity {
         btnContinue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (etMobile.getText().toString().equals(""))
-                {
-                    etMobile.setError("empty");
-                    etMobile.requestFocus();
-                }
-                else if (etMobile.getText().length() !=10){
-                    etMobile.setError("invalid");
-                    etMobile.requestFocus();
-                }
-                else
-                {
-                    Intent intent = new Intent(activity,OTP_Activity.class);
-                    intent.putExtra("mobile_number",etMobile.getText().toString());
-                    startActivity(intent);
-                    finish();
-                }
+                Intent activity2Intent = new Intent(getApplicationContext(), HomeActivity.class);
+                startActivity(activity2Intent);
+ //                if (etMobile.getText().toString().equals(""))
+//                {
+//                    etMobile.setError("empty");
+//                    etMobile.requestFocus();
+//                }
+//                else if (etMobile.getText().length() !=10){
+//                    etMobile.setError("invalid");
+//                    etMobile.requestFocus();
+//                }
+//                else
+//                {
+//                    Intent intent = new Intent(activity,OTP_Activity.class);
+//                    intent.putExtra("mobile_number",etMobile.getText().toString());
+//                    startActivity(intent);
+//                    finish();
+//                }
 
             }
 

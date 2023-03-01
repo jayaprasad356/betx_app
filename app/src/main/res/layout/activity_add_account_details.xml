@@ -24,8 +24,8 @@
                 android:layout_height="30dp"
                 android:padding="5dp"
                 android:layout_gravity="center"
-                android:background="@drawable/bluecruve"
-                android:src="@drawable/ic_arrow_back" />
+                android:background="@drawable/changebackbtn"
+                 />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -181,19 +181,17 @@
 
 
 
-    <Button
+    <ImageButton
         android:id="@+id/btnUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
         android:layout_gravity="center"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
         android:foreground="?android:attr/selectableItemBackground"
-        android:background="@drawable/btndesign"
-        android:text="Update"
-        android:textAllCaps="false"
-        android:textSize="12dp"
-        app:backgroundTint="@null" />
+        android:background="@drawable/changeupdate"
+
+          />
 </LinearLayout>

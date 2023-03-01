@@ -153,7 +153,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/deposit"
+                        android:src="@drawable/changedesitee"
                         android:background="@color/white"
                         android:padding="10dp"/>
                     <TextView
@@ -178,7 +178,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/dice"
+                        android:src="@drawable/changejodi"
                         android:background="@color/white"
                         android:padding="10dp"/>
                     <TextView
@@ -203,7 +203,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/casino"
+                        android:src="@drawable/changeharuf"
                         android:background="@color/white"
                         android:padding="10dp"/>
                     <TextView
@@ -234,7 +234,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/withdraw"
+                        android:src="@drawable/changewithdraww"
                         android:padding="10dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -258,7 +258,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/hockeysticks"
+                        android:src="@drawable/changequickcross"
                         android:padding="10dp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -282,7 +282,7 @@
                     <ImageView
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/balanced"
+                        android:src="@drawable/changeoddeven"
                         android:padding="10dp"/>
                     <TextView
                         android:layout_width="wrap_content"

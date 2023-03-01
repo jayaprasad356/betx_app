@@ -25,8 +25,8 @@
                 android:layout_height="30dp"
                 android:padding="5dp"
                 android:layout_gravity="center"
-                android:background="@drawable/bluecruve"
-                android:src="@drawable/ic_arrow_back" />
+                android:background="@drawable/changebackbtn"
+               />
 
             <TextView
                 android:layout_width="wrap_content"

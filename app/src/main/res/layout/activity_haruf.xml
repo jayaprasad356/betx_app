@@ -31,7 +31,7 @@
                         android:layout_height="30dp"
                         android:padding="5dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/bluecruve"
+                        android:background="@drawable/changebackbtn"
                         android:src="@drawable/ic_arrow_back" />
 
                     <TextView
@@ -163,8 +163,8 @@
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="10dp"
-        android:foreground="?android:attr/selectableItemBackground"
         android:background="@drawable/btndesign"
+        android:foreground="?android:attr/selectableItemBackground"
         android:text="Submit"
         android:textAllCaps="false"
         android:textSize="12dp"
