@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ayu.bigbillion">
+    package="com.betx.matka">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -48,7 +48,7 @@
         tools:ignore="ProtectedPermissions" />
 
     <application
-        android:name=".helper.ApiConfig"
+        android:name="com.betx.matka.helper.ApiConfig"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@drawable/billion_logo"
@@ -60,20 +60,20 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:usesCleartextTraffic">
         <activity
-            android:name=".MainActivity2"
+            android:name="com.betx.matka.MainActivity2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activities.ResultChartActivity"
+            android:name="com.betx.matka.activities.ResultChartActivity"
             android:exported="false" />
         <activity
-            android:name=".AddWithdrawalActivity"
+            android:name="com.betx.matka.AddWithdrawalActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.betx.matka.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -82,55 +82,55 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.HarufActivity"
+            android:name="com.betx.matka.activities.HarufActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.JodiActivity"
+            android:name="com.betx.matka.activities.JodiActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginProfileActivity"
+            android:name="com.betx.matka.LoginProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".Side_Menu_Bar_Activity"
+            android:name="com.betx.matka.Side_Menu_Bar_Activity"
             android:exported="false" />
         <activity
-            android:name=".WithdrawalActivity"
+            android:name="com.betx.matka.WithdrawalActivity"
             android:exported="false" />
         <activity
-            android:name=".Add_Account_Details_Activity"
+            android:name="com.betx.matka.Add_Account_Details_Activity"
             android:exported="false" />
         <activity
-            android:name=".activities.OddEvenActivity"
+            android:name="com.betx.matka.activities.OddEvenActivity"
             android:exported="true" />
         <activity
-            android:name=".activities.QuickCrossActivity"
+            android:name="com.betx.matka.activities.QuickCrossActivity"
             android:exported="true" />
         <activity
-            android:name=".MyTransactionActivity"
+            android:name="com.betx.matka.MyTransactionActivity"
             android:exported="false" />
         <activity
-            android:name=".Fast_Cross_Activity"
+            android:name="com.betx.matka.Fast_Cross_Activity"
             android:exported="false" />
         <activity
-            android:name=".AddPointsActivity"
+            android:name="com.betx.matka.AddPointsActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
+            android:name="com.betx.matka.HomeActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.betx.matka.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".OTP_Activity"
+            android:name="com.betx.matka.OTP_Activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.betx.matka.MainActivity"
             android:exported="true" />
 
         <service
-            android:name=".helper.MyFirebaseMessagingService"
+            android:name="com.betx.matka.helper.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

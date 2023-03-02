@@ -82,7 +82,7 @@
 
 
     </LinearLayout>
-    <ImageButton
+    <Button
         android:id="@+id/btnSubmit"
         android:layout_width="120dp"
         android:layout_height="55dp"
