@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -70,7 +71,7 @@ public class HomeActivity extends AppCompatActivity  implements NavigationBarVie
 
 
 
-        ImageView moremenu = findViewById(R.id.moremenu);
+        Button moremenu = findViewById(R.id.moremenu);
         myUser();
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm a");

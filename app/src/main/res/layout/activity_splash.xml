@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".SplashActivity"
@@ -11,9 +11,20 @@
     <com.kiprotich.japheth.TextAnim
         android:id="@+id/textWriter"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
         />
 
+
+    <TextView
+        android:layout_below="@id/textWriter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="247"
+        android:textColor="@color/appdesignblue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
 
 </RelativeLayout>

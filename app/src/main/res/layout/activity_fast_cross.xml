@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#000"
+    android:background="@drawable/bg1"
     tools:context=".Fast_Cross_Activity">
 
     <LinearLayout
@@ -491,13 +491,14 @@
 
             </LinearLayout>
 
+
+
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Submit"
-                android:textSize="20dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
                 android:textAllCaps="false"
                 android:paddingStart="50dp"
+                android:background="@drawable/changesubmitt"
                 android:paddingEnd="50dp"
                 android:layout_marginTop="50dp"
                 android:backgroundTint="#0E74F1"

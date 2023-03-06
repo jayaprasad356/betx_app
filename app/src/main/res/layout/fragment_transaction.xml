@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/apppink"
+    android:background="@drawable/bg1"
     tools:context=".MyTransactionActivity">
 
     <TextView
@@ -14,13 +14,14 @@
         android:layout_height="wrap_content"
         android:padding="15dp"
         android:text="Last 7 days transaction only"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:gravity="center"
         android:textSize="14dp" />
 
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:padding="20dp"
         android:layout_below="@+id/tvLast7Days"
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
@@ -37,7 +38,7 @@
         android:visibility="gone"
         android:text="There is no transaction right now"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20dp" />
 
 

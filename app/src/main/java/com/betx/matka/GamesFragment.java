@@ -20,6 +20,7 @@ import com.betx.matka.activities.QuickCrossActivity;
 import com.betx.matka.helper.ApiConfig;
 import com.betx.matka.helper.Constant;
 import com.betx.matka.helper.Session;
+import com.google.android.material.card.MaterialCardView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -31,14 +32,14 @@ import java.util.Map;
 public class GamesFragment extends Fragment {
     View root;
 
-    LinearLayout lytJodi;
-    LinearLayout lytHaruf;
+    MaterialCardView lytJodi;
+    MaterialCardView lytHaruf;
     LinearLayout lytTransaction;
-    LinearLayout lytQuickcross;
-    LinearLayout lytOddeven;
+    MaterialCardView lytQuickcross;
+    MaterialCardView lytOddeven;
     LinearLayout lytBits;
-    LinearLayout lytWithdrawal;
-    LinearLayout lytDeposit;
+    MaterialCardView lytWithdrawal;
+    MaterialCardView lytDeposit;
     LinearLayout lytSharepoints;
     TextView tvName,tvId,tvMobile;
     TextView tvPoints,tvPhone,newsInfo;

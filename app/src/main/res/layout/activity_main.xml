@@ -27,7 +27,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
             android:padding="10dp"
-            android:src="@drawable/billion_logo" />
+            android:src="@drawable/logo_matka" />
 
         <TextView
             android:layout_width="wrap_content"

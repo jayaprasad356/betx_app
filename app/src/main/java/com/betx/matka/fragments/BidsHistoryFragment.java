@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -50,7 +51,7 @@ public class BidsHistoryFragment extends Fragment {
     RecyclerView recyclerView;
     BidAdapter bidAdapter;
     Activity activity;
-    Button btnSubmit;
+    ImageButton btnSubmit;
     Spinner spinGame,spinDay;
     Session session;
     String date;

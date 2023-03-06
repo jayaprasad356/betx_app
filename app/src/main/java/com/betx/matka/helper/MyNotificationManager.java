@@ -80,15 +80,15 @@ public class MyNotificationManager {
         //NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(mCtx);
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(mCtx, "notification");
         Notification notification;
-        notification = mBuilder.setSmallIcon(R.drawable.billion_logo).setTicker(title)
+        notification = mBuilder.setSmallIcon(R.drawable.logo_matka).setTicker(title)
                 .setAutoCancel(true)
                 .setShowWhen(true)
                 .setWhen(Calendar.getInstance().getTimeInMillis())
                 .setContentIntent(resultPendingIntent)
                 .setContentTitle(Html.fromHtml(title).toString())
                 .setContentText(Html.fromHtml(message).toString())
-                .setSmallIcon(R.drawable.billion_logo)
-                .setLargeIcon(BitmapFactory.decodeResource(mCtx.getResources(), R.drawable.billion_logo))
+                .setSmallIcon(R.drawable.logo_matka)
+                .setLargeIcon(BitmapFactory.decodeResource(mCtx.getResources(), R.drawable.logo_matka))
                 .setPriority(Notification.PRIORITY_HIGH)
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(Html.fromHtml(message).toString()))
                 .setDefaults(Notification.DEFAULT_SOUND)

@@ -32,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
                 .setConfig(TextAnim.Configuration.INTERMEDIATE)
                 .setSizeFactor(30f)
                 .setLetterSpacing(25f)
-                .setText("BIG BILLION")
+                .setText("MATKA")
                 .setListener(new TextAnim.Listener() {
                     @Override
                     public void WritingFinished() {

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/apppink"
+    android:background="@drawable/bg1"
     tools:context=".WithdrawalActivity">
 
 
@@ -36,7 +36,7 @@
                 android:layout_marginStart="10dp"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
 
 
@@ -47,12 +47,11 @@
     </RelativeLayout>
     <Button
         android:id="@+id/btnWithdrawal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Withdrawal"
-        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:backgroundTint="@color/appdesignblue"/>
+        android:background="@drawable/withdrawal_btn"
+        app:backgroundTint="@null"/>
 
     <LinearLayout
         android:layout_width="match_parent"

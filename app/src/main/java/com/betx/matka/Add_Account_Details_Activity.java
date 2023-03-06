@@ -26,7 +26,7 @@ public class Add_Account_Details_Activity extends AppCompatActivity {
 
     ImageButton back;
     EditText etAccountNo, etIFSC, etHolderName, etPaytm,etPhonepe;
-    Button btnUpdate;
+    ImageButton btnUpdate;
     Activity activity;
     Session session;
 

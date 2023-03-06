@@ -17,7 +17,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:src="@drawable/billion_logo" />
+            android:src="@drawable/logo_matka" />
 
         <TextView
             android:layout_width="match_parent"
@@ -64,18 +64,17 @@
 
 
         <Button
-            android:id="@+id/btnContinue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/changesubmitt"
             android:paddingStart="40dp"
             android:paddingEnd="40dp"
-            android:text="Next"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:textAllCaps="false"
-            android:textSize="15dp"
-            app:backgroundTint="@color/appdesignblue" />
+            android:id="@+id/btnContinue"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:textSize="15dp"/>
+
         <LinearLayout
             android:layout_gravity="center"
             android:layout_width="wrap_content"

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/apppink"
+    android:background="@drawable/bg1"
     tools:context=".AddPointsActivity">
 
     <LinearLayout
@@ -32,7 +32,7 @@
             android:layout_marginStart="10dp"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
 
 
@@ -66,15 +66,12 @@
         />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         app:backgroundTint="@null"
-        android:background="@drawable/btndesign"
+        android:background="@drawable/add_point"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:text="Add Points"
-        android:textAllCaps="false"
         android:id="@+id/pointsbtn"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"

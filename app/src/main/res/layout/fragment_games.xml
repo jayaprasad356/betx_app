@@ -4,11 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".GamesFragment">
+    tools:context=".GamesFragment"
+    >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg1"
+        >
         <RelativeLayout
             android:id="@+id/rl"
             android:layout_width="match_parent"
@@ -39,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="20dp"
-                    android:background="@color/white">
+                    android:background="@drawable/video_bg">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -111,14 +114,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="160dp"
                             android:layout_marginTop="10dp"
-                            android:background="@color/black">
+                            android:background="@drawable/video_bg"
+                            android:backgroundTint="@color/black"
+                            >
 
                             <ImageView
                                 android:id="@+id/play"
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:layout_centerInParent="true"
-                                android:src="@drawable/ytlogo" />
+                                android:src="@drawable/you_tube" />
                         </RelativeLayout>
 
 
@@ -133,6 +138,7 @@
 
         </RelativeLayout>
         <LinearLayout
+            android:padding="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:layout_width="match_parent"
@@ -142,158 +148,129 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="130dp"
+
+
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/lytDeposit"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:background="@color/white"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+
+
                     <ImageView
+                        android:layout_gravity="center"
+                        android:padding="10dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/changedesitee"
-                        android:background="@color/white"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="DEPOSIT"
-                        android:textSize="12dp"
-                        android:textStyle="bold"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textColor="@color/appblack"
                         />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="130dp"
+
+                </com.google.android.material.card.MaterialCardView>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/lytJodi"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:background="@color/white"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+
+
                     <ImageView
+                        android:layout_gravity="center"
+                        android:padding="10dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/changejodi"
-                        android:background="@color/white"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="JODI"
-                        android:textSize="12dp"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textColor="@color/appblack"
                         />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="130dp"
+
+                </com.google.android.material.card.MaterialCardView>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/lytHaruf"
-                    android:foreground="?android:attr/selectableItemBackground"
-                    android:background="@color/white"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+
+
                     <ImageView
+                        android:layout_gravity="center"
+                        android:padding="10dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/changeharuf"
-                        android:background="@color/white"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="HARUF"
-                        android:textSize="12dp"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textColor="@color/appblack"
-                        android:layout_gravity="center" />
-                </LinearLayout>
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
 
             </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="130dp"
-                    android:background="@color/white"
-                    android:foreground="?android:attr/selectableItemBackground"
 
+
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/lytWithdrawal"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+
+
                     <ImageView
+                        android:layout_gravity="center"
+                        android:padding="10dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/changewithdraww"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="WITHDRAW"
-                        android:textSize="12dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:textColor="@color/black"
-                        android:layout_gravity="center"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="130dp"
-                    android:background="@color/white"
-                    android:foreground="?android:attr/selectableItemBackground"
+                        />
 
+                </com.google.android.material.card.MaterialCardView>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/lytQuickcross"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+
+
                     <ImageView
+                        android:layout_gravity="center"
+                        android:padding="10dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/changequickcross"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="QUICK CROSS"
-                        android:textSize="12dp"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:layout_gravity="center"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="130dp"
-                    android:background="@color/white"
-                    android:foreground="?android:attr/selectableItemBackground"
+                        />
 
+                </com.google.android.material.card.MaterialCardView>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/lytOddeven"
-                    android:orientation="vertical">
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    >
+
+
                     <ImageView
+                        android:layout_gravity="center"
+                        android:padding="10dp"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/changeoddeven"
-                        android:padding="10dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:text="ODD EVEN"
-                        android:textSize="12dp"
-                        android:gravity="center"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:layout_gravity="center"/>
-                </LinearLayout>
+                        />
+
+                </com.google.android.material.card.MaterialCardView>
+
 
             </LinearLayout>
 
@@ -304,7 +281,9 @@
             android:orientation="vertical"
             android:padding="5dp"
             android:layout_margin="10dp"
-            android:background="#E8E8E8">
+            android:background="@drawable/video_bg"
+            android:backgroundTint="#1F5586"
+            >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

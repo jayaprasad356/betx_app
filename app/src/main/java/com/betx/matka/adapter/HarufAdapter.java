@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,14 +49,14 @@ public class HarufAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
     String AndarTotalPoints = "0";
     String BaharTotalPoints = "0";
     TextView tvTotal;
-    Button btnSubmit;
+    ImageView btnSubmit;
     ArrayList<String> AndarnewPoints = new ArrayList<>();
     ArrayList<String> BaharnewPoints = new ArrayList<>();
     Spinner spinGame;
     Session session;
     String spinGameName;
 
-    public HarufAdapter(Activity activity, TextView tvWarning, TextView tvTotal, Button btnSubmit, Spinner spinGame) {
+    public HarufAdapter(Activity activity, TextView tvWarning, TextView tvTotal, ImageView btnSubmit, Spinner spinGame) {
         this.activity = activity;
         this.tvWarning = tvWarning;
         this.tvTotal = tvTotal;
