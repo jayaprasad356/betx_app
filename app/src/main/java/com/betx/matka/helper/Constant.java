@@ -3,7 +3,7 @@ package com.betx.matka.helper;
 public class Constant {
     //public static final String MainBaseUrl = "http://bigbillionenterprises.co.in/";
     //public static final String MainBaseUrl = "http://app.bigbillionenterprises.co.in/";
-    public static final String MainBaseUrl = "https://bigbillion.graymatterworks.com/";
+    public static final String MainBaseUrl = "https://matka247.graymatterworks.com/";
     //public static final String MainBaseUrl = "http://192.168.43.38/bigbillion/";
     public static final String BaseUrl = MainBaseUrl + "api/";
     public static final String SIGNUP_USER_URL = BaseUrl + "signup_user.php";
@@ -13,6 +13,8 @@ public class Constant {
     public static final String MYUSER_URL = BaseUrl + "myuser.php";
     public static final String LOGOUT_URL = BaseUrl + "logout.php";
     public static final String HARUF_URL = BaseUrl + "haruf.php";
+    public static final String CURRENT_TIMESTAMP_URL = BaseUrl + "current_timestamp.php";
+    public static final String CURRENT_TIMESTAMP = "current_timestamp";
     public static final String UPI= "upi";
     public static final String SETTINGS_URL = BaseUrl + "settings.php";
     public static final String FCM_ID = "fcm_id";

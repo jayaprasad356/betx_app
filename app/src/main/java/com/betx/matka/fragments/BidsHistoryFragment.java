@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,6 +73,7 @@ public class BidsHistoryFragment extends Fragment {
     boolean allbid = false;
     boolean deletestatus = false;
     Date gameTime_date,currentTime_date;
+    long currentTimestamp = 0;
 
     public BidsHistoryFragment() {
         // Required empty public constructor
@@ -136,6 +138,7 @@ public class BidsHistoryFragment extends Fragment {
 
             }
         });
+        currentTimestamp();
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(activity);
         LinearLayoutManager linearLayoutManager2 = new LinearLayoutManager(activity);
@@ -145,6 +148,7 @@ public class BidsHistoryFragment extends Fragment {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
             public void onClick(View view) {
+
                 if (spinGame.getSelectedItemPosition() == 0){
                     Toast.makeText(activity, "Please,Select Game", Toast.LENGTH_SHORT).show();
                 }
@@ -246,6 +250,33 @@ public class BidsHistoryFragment extends Fragment {
 
         return root;
     }
+    private void currentTimestamp()
+    {
+        Map<String, String> params = new HashMap<>();
+        ApiConfig.RequestToVolley((result, response) -> {
+            if (result) {
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    if (jsonObject.getBoolean(Constant.SUCCESS)) {
+
+                        currentTimestamp = Long.parseLong(jsonObject.getString(Constant.CURRENT_TIMESTAMP));
+
+                    }
+                    else {
+                        Toast.makeText(activity, jsonObject.getString(Constant.MESSAGE), Toast.LENGTH_SHORT).show();
+                    }
+                } catch (JSONException e){
+                    e.printStackTrace();
+                }
+            }
+            else {
+                Toast.makeText(activity, String.valueOf(response) +String.valueOf(result), Toast.LENGTH_SHORT).show();
+
+            }
+            //pass url
+        }, activity, Constant.CURRENT_TIMESTAMP_URL, params,true);
+
+    }
 
     private boolean isDeletable() throws ParseException {
         String[] separated = spinGame.getSelectedItem().toString().split("-");
@@ -259,7 +290,7 @@ public class BidsHistoryFragment extends Fragment {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        long diff = gameTime_date.getTime() - currentTime_date.getTime();
+        long diff = gameTime_date.getTime() - currentTimestamp;
         long minutes = TimeUnit.MILLISECONDS.toMinutes(diff);
         if (minutes <= 2){
             return true;
@@ -280,6 +311,42 @@ public class BidsHistoryFragment extends Fragment {
 
             //deletestatus = false;
         }
+
+    }
+    private void isTestDeletable() {
+        String[] separated = spinGame.getSelectedItem().toString().split("-");
+        //String gameTimestr = separated[1];
+        //gameTimestr = date +" "+gameTimestr;
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
+        Calendar currnetDateTime = Calendar.getInstance();
+        try {
+            //gameTime_date = df.parse(gameTimestr);
+            currentTime_date = df.parse(df.format(currnetDateTime.getTime()));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        Log.d("CURRENT_TIME",currentTime_date.getTime() + "");
+//        long diff = gameTime_date.getTime() - ;
+//        long minutes = TimeUnit.MILLISECONDS.toMinutes(diff);
+//        if (minutes <= 2){
+//            return true;
+//            //deletestatus = true;
+//
+//        }
+//        else {
+//            Date c = Calendar.getInstance().getTime();
+//            SimpleDateFormat cdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+//            String formattedDate = cdf.format(c);
+//            if (date.equals(formattedDate))
+//            {
+//                return false;
+//
+//            }else {
+//                return true;
+//            }
+//
+//            //deletestatus = false;
+//        }
 
     }
 
