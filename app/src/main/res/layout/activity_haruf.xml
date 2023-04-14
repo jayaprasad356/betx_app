@@ -32,7 +32,7 @@
                         android:padding="5dp"
                         android:layout_gravity="center"
                         android:background="@drawable/changebackbtn"
-                        android:src="@drawable/ic_arrow_back" />
+                       />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
                         android:layout_marginStart="10dp"
                         android:textSize="20dp"
                         android:textStyle="bold"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/white"/>
 
 
 

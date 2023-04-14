@@ -279,8 +279,9 @@ public class BidsHistoryFragment extends Fragment {
     }
 
     private boolean isDeletable() throws ParseException {
-        String[] separated = spinGame.getSelectedItem().toString().split("-");
-        String gameTimestr = separated[1];
+        String[] separated = spinGame.getSelectedItem().toString().split(" ");
+        String gameTimestr = separated[2] + " " + separated[3];
+
         gameTimestr = date +" "+gameTimestr;
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm a");
         Calendar currnetDateTime = Calendar.getInstance();
@@ -311,7 +312,6 @@ public class BidsHistoryFragment extends Fragment {
 
             //deletestatus = false;
         }
-
     }
     private void isTestDeletable() {
         String[] separated = spinGame.getSelectedItem().toString().split("-");

@@ -74,11 +74,11 @@ public class AddPointsActivity extends AppCompatActivity implements PaymentStatu
                     etPoint.requestFocus();
                 }
 
-                else if (etPoint.length()<=2){
-
-                    tvMimDeposite.setVisibility(View.VISIBLE);
-
-                }
+//                else if (etPoint.length()<=2){
+//
+//                    tvMimDeposite.setVisibility(View.VISIBLE);
+//
+//                }
 
 
 //                else {
