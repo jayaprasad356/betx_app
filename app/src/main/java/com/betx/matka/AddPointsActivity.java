@@ -39,6 +39,7 @@ public class AddPointsActivity extends AppCompatActivity implements PaymentStatu
     Activity activity;
     Session session;
     String UPI_ID = "";
+    String MinDeposite = "";
     TextView tvMimDeposite;
 
     @Override
@@ -63,6 +64,8 @@ public class AddPointsActivity extends AppCompatActivity implements PaymentStatu
         pointsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
                 if (etPoint.getText().toString().equals(""))
                 {
                     etPoint.setError("empty");
@@ -74,11 +77,15 @@ public class AddPointsActivity extends AppCompatActivity implements PaymentStatu
                     etPoint.requestFocus();
                 }
 
-//                else if (etPoint.length()<=2){
-//
-//                    tvMimDeposite.setVisibility(View.VISIBLE);
-//
-//                }
+
+                // etPoint is greaterthan minDeposite
+                else if (MinDeposite.equals(etPoint.getText()) || Integer.parseInt(etPoint.getText().toString().trim()) < Integer.parseInt(MinDeposite)){
+
+                    tvMimDeposite.setVisibility(View.VISIBLE);
+
+                }
+
+
 
 
 //                else {
@@ -180,6 +187,12 @@ public class AddPointsActivity extends AppCompatActivity implements PaymentStatu
                     JSONArray jsonArray = jsonObject.getJSONArray(Constant.DATA);
                     if (jsonObject.getBoolean(Constant.SUCCESS)) {
                         UPI_ID = jsonArray.getJSONObject(0).getString(Constant.UPI);
+                        MinDeposite = jsonArray.getJSONObject(0).getString(Constant.MIN_DEPOSITE);
+                        tvMimDeposite.setText("Minimum Deposit is "+MinDeposite);
+
+
+                        //   Toast.makeText(activity, MinDeposite, Toast.LENGTH_SHORT).show();
+
 
                     }
                 } catch (JSONException e){

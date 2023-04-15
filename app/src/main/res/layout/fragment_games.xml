@@ -148,57 +148,45 @@
                 android:orientation="horizontal">
 
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/lytDeposit"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    >
+
 
 
                     <ImageView
+                        android:id="@+id/lytDeposit"
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="120dp"
                         android:background="@drawable/changedesitee"
                         />
 
-                </com.google.android.material.card.MaterialCardView>
                 <Space
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"/>
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/lytJodi"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    >
+
 
 
                     <ImageView
+                        android:id="@+id/lytJodi"
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="120dp"
                         android:background="@drawable/changejodi"
                         />
 
-                </com.google.android.material.card.MaterialCardView>
+
                 <Space
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"/>
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/lytHaruf"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    >
 
 
                     <ImageView
+                        android:id="@+id/lytHaruf"
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="120dp"
                         android:background="@drawable/changeharuf"
                         />
 
-                </com.google.android.material.card.MaterialCardView>
 
 
             </LinearLayout>
@@ -211,57 +199,45 @@
                 android:orientation="horizontal">
 
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/lytWithdrawal"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    >
+
 
 
                     <ImageView
+                        android:id="@+id/lytWithdrawal"
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="120dp"
                         android:background="@drawable/changewithdraww"
                         />
 
-                </com.google.android.material.card.MaterialCardView>
-                <Space
+\                <Space
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"/>
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/lytQuickcross"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    >
+
 
 
                     <ImageView
+                        android:id="@+id/lytQuickcross"
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="120dp"
                         android:background="@drawable/changequickcross"
                         />
 
-                </com.google.android.material.card.MaterialCardView>
                 <Space
                     android:layout_width="10dp"
                     android:layout_height="wrap_content"/>
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/lytOddeven"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    >
+
 
 
                     <ImageView
+                        android:id="@+id/lytOddeven"
                         android:layout_gravity="center"
                         android:layout_width="100dp"
                         android:layout_height="120dp"
                         android:background="@drawable/changeoddeven"
                         />
 
-                </com.google.android.material.card.MaterialCardView>
 
 
             </LinearLayout>

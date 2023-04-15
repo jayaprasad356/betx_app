@@ -61,4 +61,5 @@ public class Constant {
     public static final String PHONEPE = "phonepe";
 
 
+    public static final String MIN_DEPOSITE = "min_deposit";
 }

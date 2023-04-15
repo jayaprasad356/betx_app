@@ -32,14 +32,14 @@ import java.util.Map;
 public class GamesFragment extends Fragment {
     View root;
 
-    MaterialCardView lytJodi;
-    MaterialCardView lytHaruf;
+    ImageView lytJodi;
+    ImageView lytHaruf;
     LinearLayout lytTransaction;
-    MaterialCardView lytQuickcross;
-    MaterialCardView lytOddeven;
+    ImageView lytQuickcross;
+    ImageView lytOddeven;
     LinearLayout lytBits;
-    MaterialCardView lytWithdrawal;
-    MaterialCardView lytDeposit;
+    ImageView lytWithdrawal;
+    ImageView lytDeposit;
     LinearLayout lytSharepoints;
     TextView tvName,tvId,tvMobile;
     TextView tvPoints,tvPhone,newsInfo;

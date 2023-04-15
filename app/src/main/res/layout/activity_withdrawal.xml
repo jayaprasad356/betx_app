@@ -50,7 +50,7 @@
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:background="@drawable/withdrawal_btn"
+        android:background="@drawable/changewithdraw"
         app:backgroundTint="@null"/>
 
     <LinearLayout
