@@ -143,7 +143,7 @@ public class TransactionAdapter extends RecyclerView.Adapter<RecyclerView.ViewHo
 
             holder.tvTime.setText(transaction.getDate_created());
             holder.tvPoints.setText(transaction.getPoints());
-            holder.tvBalance.setText("Balanace "+ transaction.getBalance());
+            holder.tvBalance.setText("Balanace"+ transaction.getBalance());
 
         }
 

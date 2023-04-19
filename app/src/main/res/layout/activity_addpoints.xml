@@ -69,7 +69,7 @@
         android:layout_width="140dp"
         android:layout_height="50dp"
         app:backgroundTint="@null"
-        android:background="@drawable/add_point"
+        android:background="@drawable/add_points_new"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
         android:id="@+id/pointsbtn"

@@ -31,10 +31,10 @@
 
     <ImageView
         android:id="@+id/btnShare"
-        android:layout_width="180dp"
-        android:layout_height="70dp"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:background="@drawable/share_point_btn"
+        android:background="@drawable/sp_new"
         android:textAllCaps="false"
         />
 

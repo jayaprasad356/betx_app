@@ -20,7 +20,7 @@ public class Functions {
         countryList.add(new Game("", "Select Game"));
         countryList.add(new Game("FD", "FD (Faridabad) 05:45 PM"));
         countryList.add(new Game("GB", "GB (Gaziabad) 07:45 PM"));
-        countryList.add(new Game("GL", "GL (Gali) 10:4 PM"));
+        countryList.add(new Game("GL", "GL (Gali) 10:45 PM"));
         countryList.add(new Game("", "Next Day Games"));
         countryList.add(new Game("DS", "DS (Disawar) 02:10 AM"));
 

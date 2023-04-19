@@ -48,9 +48,9 @@
     <Button
         android:id="@+id/btnWithdrawal"
         android:layout_width="110dp"
-        android:layout_height="50dp"
+        android:layout_height="80dp"
         android:layout_gravity="center"
-        android:background="@drawable/changewithdraw"
+        android:background="@drawable/withdrawal_new"
         app:backgroundTint="@null"/>
 
     <LinearLayout
