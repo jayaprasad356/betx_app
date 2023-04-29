@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_100sdp"
+        >
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:text="Payment"
+            android:gravity="center"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:id="@+id/tvpayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:background="@drawable/rzp_green_button"
+            android:drawableEnd="@drawable/upi"
+            android:padding="@dimen/_14sdp"
+            android:text="Pay via upi" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

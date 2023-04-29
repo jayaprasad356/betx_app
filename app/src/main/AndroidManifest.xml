@@ -123,12 +123,35 @@
             android:name="com.betx.matka.LoginActivity"
             android:exported="true" />
         <activity
+            android:name="com.betx.matka.PaymentActivity"
+            android:exported="true" />
+        <activity
             android:name="com.betx.matka.OTP_Activity"
             android:exported="false" />
         <activity
             android:name="com.betx.matka.MainActivity"
             android:exported="true" />
+        <receiver
+            android:name="com.razorpay.RzpTokenReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="rzp.device_token.share" />
+            </intent-filter>
+        </receiver>
 
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <data
+                    android:host="rzp.io"
+                    android:scheme="io.rzp" />
+            </intent-filter>
+        </activity>
         <service
             android:name="com.betx.matka.helper.MyFirebaseMessagingService"
             android:exported="false">

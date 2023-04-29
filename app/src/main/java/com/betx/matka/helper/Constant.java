@@ -18,6 +18,7 @@ public class Constant {
     public static final String UPI= "upi";
     public static final String SETTINGS_URL = BaseUrl + "settings.php";
     public static final String FCM_ID = "fcm_id";
+    public static final String PRODUCT_PRICE = "product_price";
 
     public static final String UPDATE_FCM = BaseUrl + "update_fcm.php";
     public static final String BIDSLIST_URL = BaseUrl + "bidslist.php";
