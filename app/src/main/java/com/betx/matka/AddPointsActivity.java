@@ -211,6 +211,8 @@ public class AddPointsActivity extends AppCompatActivity implements PaymentStatu
     @Override
     public void onTransactionCompleted(TransactionDetails transactionDetails) {
 
+
+
     }
 
     @Override
